@@ -1,0 +1,32 @@
+{
+  "name": "openxml",
+  "version": "1.1.2",
+  "description": "Open XML SDK for JavaScript",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jthuraisamy/openxml.git"
+  },
+  "keywords": [
+    "openxml",
+    "microsoft",
+    "office",
+    "word",
+    "powerpoint",
+    "excel",
+    "docx",
+    "xlsx",
+    "pptx"
+  ],
+  "author": "Jackson Thuraisamy",
+  "license": "Ms-PL",
+  "bugs": {
+    "url": "https://github.com/jthuraisamy/openxml/issues"
+  },
+  "homepage": "https://github.com/jthuraisamy/openxml#readme",
+  "dependencies": {
+    "jszip": "^2.5.0",
+    "linq": "^3.0.5",
+    "ltxml": "jthuraisamy/ltxml"
+  }
+}
