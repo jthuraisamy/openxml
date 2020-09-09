@@ -874,7 +874,7 @@ openXml.OpenXmlPackage.prototype.getContentType = function (uri) {
     ct = this.ctXDoc.descendants(CT.Override)
         .firstOrDefault(function (o) {
             return o.attribute("PartName").value === uri;
-        });
+        }, null);
     if (ct === null) {
         var exti = uri.lastIndexOf(".");
         var ext = uri.substring(exti + 1);
