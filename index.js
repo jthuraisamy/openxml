@@ -124,10 +124,10 @@ function openFromZip(zip, pkg) {
             var f2 = f;
             if (f !== "[Content_Types].xml")
                 f2 = "/" + f;
-            //changes are needed here. i think it needs to be:
-            //var newPart = new openXml.OpenXmlPart(pkg, f2, null, null, zipFile.asBinary());
-            
-            var newPart = new openXml.OpenXmlPart(pkg, f2, null, null, zipFile.data);
+
+            // Use getter asText() to get the text content of zipFile.
+            // Detail https://stuk.github.io/jszip/documentation/upgrade_guide.html
+            var newPart = new openXml.OpenXmlPart(pkg, f2, null, null, zipFile.asText());
             pkg.parts[f2] = newPart;
 
         }
